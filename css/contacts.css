@@ -1,0 +1,27 @@
+#content {
+    text-align: center;
+    font-style: normal;
+}
+
+#contacts-section {
+    background-color: #e3e9ef;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#contacts-section div {
+    color: #e3e9ef;
+    border-style: outset;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 15px;;
+    border-width: 5px;
+    background-color: #4b0e2e;
+}
+
+
+
+#contacts-section .hoverable-div:hover {
+    background-color: #0000003f;
+    color: #4b0e2e;
+}
