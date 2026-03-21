@@ -23,7 +23,7 @@ btn2.innerHTML = "<h2>Alla Kakor</h2>";
 btn2.style.marginLeft = "auto";
 btn2.style.marginRight = "10px";
 
-const btn3div = document.createElement('div')
+const btn3div = document.createElement('div');
 btn3div.style.width = "100%";
 btn3div.style.display = "flex";
 btn3div.style.justifyContent = "center";
@@ -31,8 +31,8 @@ btn3div.style.justifyContent = "center";
 const btn3 = document.createElement('button');
 btn3.id = "btn-deny-all";
 btn3.innerText = "Neka Alla Kakor";
-btn3.style.fontSize = "16x"
-btn3.style.padding = "5px"
+btn3.style.fontSize = "16px";
+btn3.style.padding = "5px";
 
 btn3div.appendChild(btn3);
 
@@ -40,11 +40,8 @@ cookies_box.appendChild(headline);
 
 information_section.appendChild(message);
 
-cookies_box.appendChild(information_section);
-
 buttons_section.appendChild(btn1);
 buttons_section.appendChild(btn2);
-
 
 information_section.appendChild(buttons_section);
 
@@ -113,9 +110,9 @@ Object.assign(buttons_section.style, {
 function hide_cookies_box() {
     cookies_box.style.display = "none";
 
-    const choice = document.getElementById("cookies-choice-footer")
+    const choice = document.getElementById("cookies-choice-footer");
     if (choice !== null) {
-        cookieChoice = localStorage.getItem("cookies_answered")
+        cookieChoice = localStorage.getItem("cookies_answered");
     
         if (cookieChoice === "necessary") {
             choice.innerText = "Du har tillåtit oss att använda endast nödvändiga kakor för din upplevelse";
@@ -139,11 +136,11 @@ function try_show_cookies() {
         hide_cookies_box();
     }
 
-    cookieChoice = localStorage.getItem("cookies_answered")
+    cookieChoice = localStorage.getItem("cookies_answered");
 
-    const choice = document.getElementById("cookies-choice-footer")
+    const choice = document.getElementById("cookies-choice-footer");
     if (choice !== null) {
-        cookieChoice = localStorage.getItem("cookies_answered")
+        cookieChoice = localStorage.getItem("cookies_answered");
     
         if (cookieChoice === "necessary") {
             choice.innerText = "Du har tillåtit oss att använda endast nödvändiga kakor för din upplevelse";
@@ -161,13 +158,13 @@ function accept_all_cookies() {
 }
 
 function accept_necessary_cookies() {
-    localStorage.setItem("cookies_answered", "necessary")
-    hide_cookies_box()
+    localStorage.setItem("cookies_answered", "necessary");
+    hide_cookies_box();
 }
 
 function deny_all_cookies() {
-    localStorage.setItem("cookies_answered", "deny")
-    hide_cookies_box()
+    localStorage.setItem("cookies_answered", "deny");
+    hide_cookies_box();
 }
 
 btn1.addEventListener("click", accept_necessary_cookies);
