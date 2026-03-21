@@ -6,7 +6,7 @@ const information_section = document.createElement('section');
 const headline = document.createElement('h3');
 headline.id = "cookies-box-header";
 
-const message = document.createElement('p');
+const message = document.createElement('div');
 message.id = "cookies-box-message";
 
 const buttons_section = document.createElement('section');
