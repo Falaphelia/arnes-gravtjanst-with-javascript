@@ -1,5 +1,5 @@
-const images = ["../img/machine1.jpg", "../img/machine2.jpg", "../img/machine3.jpg", "../img/machine4.jpg",
-    "../img/machine5.jpg", "../img/machine6.jpg", "../img/machine7.jpg", "../img/machine8.jpg"];
+const images = ["../img/machine1.webp", "../img/machine2.webp", "../img/machine3.webp", "../img/machine4.webp",
+    "../img/machine5.webp", "../img/machine6.webp", "../img/machine7.webp", "../img/machine8.webp"];
 
 const counter = document.getElementById("image_number");
 const displayImg = document.getElementById("main-gallery-img");
